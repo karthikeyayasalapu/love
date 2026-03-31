@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Love 💖</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    overflow: hidden;
+    text-align: center;
+    color: white;
+}
+
+/* Floating kisses */
+.kiss {
+    position: absolute;
+    font-size: 24px;
+    animation: float 8s linear infinite;
+    opacity: 0.8;
+}
+
+@keyframes float {
+    from {
+        transform: translateY(100vh) scale(0.5);
+    }
+    to {
+        transform: translateY(-10vh) scale(1.2);
+    }
+}
+
+/* Main content */
+.container {
+    position: relative;
+    top: 20vh;
+}
+
+h1 {
+    font-size: 3em;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px #fff; }
+    to { text-shadow: 0 0 25px #ff4b5c; }
+}
+
+button {
+    margin-top: 20px;
+    padding: 15px 35px;
+    font-size: 18px;
+    border: none;
+    border-radius: 50px;
+    background: white;
+    color: #ff4b5c;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background: #ffe6ea;
+}
+
+.hidden {
+    display: none;
+    margin-top: 30px;
+}
+
+img {
+    width: 280px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.7); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 22px;
+    line-height: 1.6;
+    animation: slideUp 1.5s ease;
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Floating kisses -->
+<script>
+for (let i = 0; i < 25; i++) {
+    let kiss = document.createElement("div");
+    kiss.className = "kiss";
+    kiss.innerHTML = "💋";
+    kiss.style.left = Math.random() * 100 + "vw";
+    kiss.style.animationDuration = (5 + Math.random() * 5) + "s";
+    document.body.appendChild(kiss);
+}
+</script>
+
+<div class="container">
+    <h1>Hey My Love 💋💖</h1>
+    <p>You are my happiness, click below ❤️</p>
+
+    <button onclick="showLove()">💖 Click Me 💖</button>
+
+    <div id="loveBox" class="hidden">
+        <img src="C:\Users\shado\Music\~Karthiiii..!!\karthi\01.jpg" alt="My Love">
+
+        <div class="message">
+            💕 From the day I met you... everything changed 💕 <br><br>
+
+            You are not just a person in my life…  
+            You are my **most valuable person**,  
+            my **favorite human**, my **peace**, my **happiness** 💖<br><br>
+
+            Even on your worst days…  
+            I will always be here to make you smile 😊💋<br><br>
+
+            👉 And always remember this:  
+            **You are deeply loved. Forever.** ❤️
+        </div>
+    </div>
+</div>
+
+<script>
+function showLove() {
+    document.getElementById("loveBox").style.display = "block";
+}
+</script>
+
+</body>
+</html>
